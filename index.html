@@ -3,44 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Our Cause</title>
+    <title>Jewelry Boutique</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            overflow: hidden;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
+            color: #333;
         }
         header {
-            background-color: #007BFF;
+            background-color: #6A5ACD;
             color: white;
             padding: 20px;
             text-align: center;
         }
         .content {
-            padding: 40px;
+            padding: 20px;
             text-align: center;
         }
         h2 {
-            color: #333;
+            color: #6A5ACD;
         }
-        p {
-            font-size: 18px;
-            color: #555;
+        .product {
+            display: inline-block;
+            width: 200px;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
         }
-        #video {
-            position: fixed;
-            top: -100%;
-            left: 0;
+        .product img {
             width: 100%;
-            height: 100%;
-            background-color: black;
-            transition: top 0.5s;
-        }
-        #video video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            border-radius: 5px;
         }
         .button {
             padding: 10px 20px;
@@ -48,8 +43,8 @@
             color: white;
             border: none;
             cursor: pointer;
-            font-size: 16px;
             border-radius: 5px;
+            text-decoration: none;
         }
         .button:hover {
             background-color: #218838;
@@ -59,29 +54,43 @@
 <body>
 
 <header>
-    <h1>Support Our Cause</h1>
+    <h1>Jewelry Boutique</h1>
+    <p>Discover Elegant Jewelry for Every Occasion</p>
 </header>
 
 <div class="content">
-    <h2>Help Us Make a Difference</h2>
-    <p>Your contributions will help provide resources and support for people with disabilities.</p>
-    <p>Join us in making a positive impact in our community!</p>
-    <button class="button" onclick="showVideo()">Read More</button>
-</div>
+    <h2>Our Collection</h2>
 
-<div id="video">
-    <video controls autoplay>
-        <source src="rickroll.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
+    <div class="product">
+        <img src="path/to/your-image1.jpg" alt="Jewelry 1">
+        <h3>Gold Necklace</h3>
+        <p>$150.00</p>
+        <a href="#" class="button">Buy Now</a>
+    </div>
 
-<script>
-    function showVideo() {
-        document.getElementById('video').style.top = '0';
-    }
-</script>
+    <div class="product">
+        <img src="path/to/your-image2.jpg" alt="Jewelry 2">
+        <h3>Silver Ring</h3>
+        <p>$75.00</p>
+        <a href="#" class="button">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <img src="path/to/your-image3.jpg" alt="Jewelry 3">
+        <h3>Diamond Earrings</h3>
+        <p>$200.00</p>
+        <a href="#" class="button">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <img src="path/to/your-image4.jpg" alt="Jewelry 4">
+        <h3>Pearl Bracelet</h3>
+        <p>$120.00</p>
+        <a href="#" class="button">Buy Now</a>
+    </div>
+</div>
 
 </body>
 </html>
+
 
